@@ -8,7 +8,7 @@ const Header: React.FC = () => {
 
     /**
      * Update search state on input change
-     * @param event 
+     * @param event event object from function
      */
     const handleChange = (event: React.FormEvent<HTMLInputElement>) => {
         const { value } = event.currentTarget;
@@ -17,7 +17,7 @@ const Header: React.FC = () => {
 
       /**
      * Search new artist on form submit and clear search bar
-     * @param event 
+     * @param event event object from function
      */
     const handleSubmit = (event: React.FormEvent) => {
         event.preventDefault();

@@ -5,7 +5,7 @@ import dummyData from "../data/dummyData.json";
 interface ArtistContextProps {
     artist: Artist;
     setArtist: React.Dispatch<React.SetStateAction<Artist>>;
-    getArtist: any;
+    getArtist: (data: string) => void;
 }
 
 interface ArtistContextProviderProps {
@@ -43,7 +43,6 @@ export const ArtistContextProvider = ({
             const data = await response.json();
 
             setArtist(data);
-            console.log(data)
         } catch (err) {
             console.error(err);
         }
