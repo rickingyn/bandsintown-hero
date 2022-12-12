@@ -69,12 +69,14 @@
             .artist-info {
                 color: #fff;
                 .artist {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
                     margin-top: 0;
                     margin-bottom: 5px;
                     font-size: 26px;
                     
                     .verified-icon {
-                        margin: 0 5px;
                         height: 24px;
                     }
                 }
@@ -84,7 +86,6 @@
                     font-size: 18px;
                     @media (max-width: $lg) {
                         display: flex;
-                        justify-content: center;
                         align-items: center;
                         margin-top: 5px;
                         height: 60px;
